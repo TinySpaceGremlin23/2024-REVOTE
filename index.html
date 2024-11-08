@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Your Voting Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Intro Section with Emotional Message -->
+        <section class="intro-section">
+            <h2>The 2024 Election: A Betrayal of America</h2>
+            <p>The 2024 election is not just a political event—it is a <strong>betrayal</strong> of the American people. A betrayal that runs deep, that shakes the very core of our democracy. Over <strong>20 million votes</strong> have gone <strong>unaccounted for</strong>. Millions of ballots are missing, broken machines failed in critical states, and entire districts were subjected to <strong>intimidation</strong>, <strong>interference</strong>, and <strong>destruction</strong>. Voting stations were <strong>attacked</strong>, ballot boxes were <strong>burnt</strong>, and the integrity of the entire process was <strong>sabotaged</strong>. This was no accident. This was <strong>deliberate</strong>.</p>
+            <p>Before the election, Donald J. Trump said it all: <strong>"I don’t need your votes. I have all the votes I need."</strong> He said it out loud, for the whole world to hear. He <strong>knew</strong> he would win. He <strong>knew</strong> how it would unfold. This wasn’t just arrogance—it was a <strong>warning</strong>. He had the system rigged, and <strong>we all watched it happen</strong>. From the moment he uttered those words, we knew the deck was stacked against us. The election was <strong>already decided</strong> in his favor before the people ever voted.</p>
+            <p><strong>Kamala Harris</strong>, with her characteristic grace, tried to comfort us when the results came in. She spoke of acceptance, of dealing with the disappointment, and though her words were kind and sincere, <strong>America</strong> cannot be asked to simply accept what happened. <strong>We can’t just be disappointed anymore.</strong> <strong>We are angry.</strong> <strong>We are furious.</strong><strong> America weeps is rage.</strong> The people of this nation have been <strong>betrayed</strong>. We were told our votes mattered, but what we’ve seen is <strong>a system built on lies</strong>. The votes that <strong>should have counted</strong> didn’t. The people who trusted the process were <strong>let down</strong>. <strong>Their voices were silenced</strong>.</p>
+            <p>The stories are everywhere—<strong>voters who watched their ballots vanish</strong> from the system, <strong>machines that malfunctioned</strong>, <strong>ballot boxes that mysteriously disappeared</strong>, and <strong>polling stations targeted by threats</strong>. All of this while <strong>millions</strong> of people who voted early, by mail, or in person have found out their votes were <strong>lost</strong>, <strong>miscounted</strong>, or <strong>never even recorded</strong>. <strong>How many more injustices do we have to witness</strong> before the truth comes out? How many more reports of stolen ballots, of corrupted machines, of <strong>deliberate sabotage</strong>? This is not a democracy. This is a <strong>sham</strong>.</p>
+            <p><strong>Kamala Harris</strong> did what she could to calm the storm, but the people are not simply sad. <strong>We are enraged.</strong> The anger is <strong>rising</strong>, and it’s not just because of the loss, but because of the <strong>betrayal</strong> we’ve witnessed. <strong>We were told our votes mattered. We were lied to.</strong> America has been <strong>cheated</strong>, and now it is time for us to stand up and demand what’s rightfully ours.</p>
+            <p>We demand a <strong>recount</strong>. We demand a <strong>revote</strong>. A fair, transparent, and honest election—<strong>one where the people’s voices are truly heard</strong>. This isn’t just about the future of a political party; this is about the future of America itself. <strong>This is about the future of our democracy.</strong> <strong>We will not stand down. We will not stay silent.</strong></p>
+            <p>This site exists to provide a platform for those who have been ignored, for those who have been silenced. We will <strong>not rest</strong> until the truth is revealed, until every vote is counted, and until the American people get the justice they deserve. <strong>We will not let this go.</strong> We will not let this stolen election become the new normal. <strong>The time for action is now.</strong></p>
+            <p><strong>America is seething with rage.</strong> <strong>We are furious.</strong> <strong>We are demanding accountability.</strong> The election was rigged, and we will not allow it to stand. <strong>The people will rise</strong>—and we will be heard.</p>
+        </section>
+
+        <!-- Form Section for Submitting Voting Experience -->
+        <h1>Document Your Voting Experience</h1>
+        <p>Share details about your experience and any evidence (optional).</p>
+        
+        <form id="reportForm">
+            <label for="description">Description:</label>
+            <textarea id="description" rows="5" placeholder="Describe what you experienced..."></textarea>
+
+            <label for="evidence">Attach Evidence (optional):</label>
+<input type="file" id="evidence" multiple>
+<ul id="fileLinks"></ul> <!-- Container for download links -->
+<p>Please keep a copy of any files you upload for your records. Files uploaded here may not be saved permanently.</p>
+
+            <button type="button" onclick="saveReport()">Save Locally</button>
+            <button type="button" onclick="exportReports()">Export as JSON</button>
+            <button type="button" onclick="printReport()">Print/Save as PDF</button>
+            <button type="button" onclick="exportAsText()">Export as Plain Text</button>
+            <button type="button" onclick="emailReport()">Generate Email to White House</button>
+        </form>
+
+        <!-- Submission Links Section -->
+        <div class="submission-links">
+            <h2>Additional Submission Options</h2>
+            <p>If you'd like to submit your experience directly to an official organization, please use the links below:</p>
+            <a href="https://www.whitehouse.gov/contact/" target="_blank" class="button" rel="noopener noreferrer">Submit Directly to White House Contact Form</a>
+            <a href="https://www.eac.gov/contact" target="_blank" class="button" rel="noopener noreferrer">Contact the Election Assistance Commission</a>
+            <a href="https://commoncause.org" target="_blank" class="button" rel="noopener noreferrer">Submit to Common Cause</a>
+            <p>Or, you can mail your report to:</p>
+            <address>
+                The White House<br>
+                1600 Pennsylvania Avenue NW<br>
+                Washington, DC 20500
+            </address>
+        </div>
+
+        <!-- Additional Resources Section -->
+        <div class="additional-resources">
+            <h2>Additional Resources and Information</h2>
+            <p>These resources provide additional information on election integrity, reporting, and understanding your rights:</p>
+            
+            <h3>General Election and Voting Resources</h3>
+            <ul>
+                <li><a href="https://www.usa.gov/election-office" target="_blank" rel="noopener noreferrer">USA.gov Voting and Election Information</a></li>
+                <li><a href="https://www.ncsl.org/research/elections-and-campaigns.aspx" target="_blank" rel="noopener noreferrer">National Conference of State Legislatures - Election Laws and Procedures</a></li>
+                <li><a href="https://www.fec.gov/" target="_blank" rel="noopener noreferrer">Federal Election Commission</a></li>
+                <li><a href="https://866ourvote.org/" target="_blank" rel="noopener noreferrer">866-OUR-VOTE - Election Protection</a></li>
+                <li><a href="https://www.lwv.org/local-leagues/find-your-local-league" target="_blank" rel="noopener noreferrer">League of Women Voters - Local Leagues</a></li>
+            </ul>
+
+            <h3>State-Specific Election Resources</h3>
+<ul>
+    <li><a href="https://www.nass.org/can-I-vote/contact-your-election-official" target="_blank" rel="noopener noreferrer">Contact Your State Election Official - National Association of Secretaries of State</a></li>
+    <li><a href="https://www.sos.ca.gov/elections" target="_blank" rel="noopener noreferrer">California Elections - Secretary of State</a></li>
+    <li><a href="https://sos.ga.gov/index.php/elections" target="_blank" rel="noopener noreferrer">Georgia Elections - Secretary of State</a></li>
+    <li><a href="https://www.michigan.gov/sos/0,4670,7-127-1633_11619---,00.html" target="_blank" rel="noopener noreferrer">Michigan Elections - Bureau of Elections</a></li>
+    <!-- Added Wisconsin and other swing states -->
+    <li><a href="https://elections.wi.gov/" target="_blank" rel="noopener noreferrer">Wisconsin Elections - Elections Commission</a></li>
+    <li><a href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx" target="_blank" rel="noopener noreferrer">Pennsylvania Elections - Voter Registration Status</a></li>
+    <li><a href="https://www.azsos.gov/elections" target="_blank" rel="noopener noreferrer">Arizona Elections - Secretary of State</a></li>
+    <li><a href="https://www.sos.state.pa.us" target="_blank" rel="noopener noreferrer">Pennsylvania Elections - Secretary of State</a></li>
+    <li><a href="https://www.michigan.gov/sos" target="_blank" rel="noopener noreferrer">Michigan Elections - Secretary of State</a></li>
+</ul>
+
+
+            <h3>Legal and Constitutional Resources</h3>
+            <ul>
+                <li><a href="https://constitution.congress.gov/" target="_blank" rel="noopener noreferrer">Constitution Annotated</a></li>
+                <li><a href="https://www.law.cornell.edu/wex/election_law" target="_blank" rel="noopener noreferrer">Cornell Legal Information Institute - Election Law</a></li>
+                <li><a href="https://www.brennancenter.org/issues/ensure-every-american-can-vote/voting-reform/voting-laws-roundup" target="_blank" rel="noopener noreferrer">Brennan Center - Voting Laws Roundup</a></li>
+                <li><a href="https://www.aclu.org/issues/voting-rights" target="_blank" rel="noopener noreferrer">ACLU Voting Rights</a></li>
+            </ul>
+
+            <h3>Election Security and Fraud Resources</h3>
+<ul>
+    <li><a href="https://www.eac.gov/voting-equipment" target="_blank" rel="noopener noreferrer">Election Assistance Commission - Voting Equipment and Security</a></li>
+    <li><a href="https://www.cisa.gov/protect2020" target="_blank" rel="noopener noreferrer">CISA - Election Security</a></li>
+    <li><a href="https://www.commoncause.org/election-protection/" target="_blank" rel="noopener noreferrer">Common Cause - Report Voting Problems</a></li>
+    <li><a href="https://www.usa.gov/election-office" target="_blank" rel="noopener noreferrer">USA.gov - Election and Voting Information</a></li>
+    <li><a href="https://www.fec.gov/" target="_blank" rel="noopener noreferrer">Federal Election Commission - Election Oversight and Laws</a></li>
+    <li><a href="https://www.aclu.org/issues/voting-rights" target="_blank" rel="noopener noreferrer">ACLU - Voting Rights Protection</a></li>
+    <li><a href="https://www.brennancenter.org/issues/ensure-every-american-can-vote/voting-reform/voting-laws-roundup" target="_blank" rel="noopener noreferrer">Brennan Center for Justice - Voting Laws Roundup</a></li>
+    <li><a href="https://www.lwv.org/local-leagues/find-your-local-league" target="_blank" rel="noopener noreferrer">League of Women Voters - Find Your Local League</a></li>
+    <li><a href="https://constitution.congress.gov/" target="_blank" rel="noopener noreferrer">Constitution Annotated - U.S. Constitution, Voting Rights</a></li>
+    <li><a href="https://www.ncsl.org/research/elections-and-campaigns.aspx" target="_blank" rel="noopener noreferrer">National Conference of State Legislatures - Election Laws</a></li>
+    <li><a href="https://www.866ourvote.org/" target="_blank" rel="noopener noreferrer">866-OUR-VOTE - Election Protection</a></li>
+</ul>
+
+        </div>
+
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
